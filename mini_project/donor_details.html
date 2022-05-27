@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rakt Sanagrahalay.com/profile</title>
+    <link rel="icon" href="../Image/blood logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css file link-->
+    <link rel="stylesheet" href="./css/donor_details.css">
+</head>
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-toggleable-md navbar-light  bg-dark">
+        <button class="navbar-toggler navbar-toggler-right dropdown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-fluid logoimg" src="./images/blood logo.png">
+            <h7 class="brand-name"><b>Rakt Sanagrahalay</b></h7>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item item2 active">
+                    <a href=""> <button class="loginbtn btn-outline-success my-2 my-sm-0" type="submit" id="update"><b>UPDATE</b></button></a>
+                </li>
+                <li class="nav-item item2 active">
+                    <a href=""> <button class="loginbtn btn-outline-success my-2 my-sm-0" type="submit" onclick="signOut()"><b>LOG OUT</b></button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="c2">
+             <h1 class="detail_line">donor details</h1>
+             <p style="font-size: 25px;text-align: center;font-style: italic;"><u>To know Donor Details Enter Only Correct donor Name Which have entered in registration form.</u></p>
+        <div class="fluid-container details">
+           <div class="row">
+            <div class="col-sm-6">
+                <div class="col1">
+                    <p class="title">donor name:</p>
+                    <input type="text" name="name" id="name" /> <br /><br />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col2">
+                    <p class="title">donor Email id:</p>
+                    <input type="text" name="donor_age" id="email" /> <br /><br />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="col3">
+                    <p class="title"> donor age:</p>
+                    <input type="text" name="address" id="age" /> <br /><br />
+           </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col1">
+                    <p class="title">donor Phone No:</p>
+                    <input type="text" name="donor_phone_no" id="phone" /> <br /><br />
+                </div>
+            </div>
+        </div>
+        
+            <div class="row">
+            <div class="col-sm-6">
+                <div class="col2">
+                    <p class="title">disease</p>
+                    <input type="text" name="donor_disease" id="disease" /> <br /><br />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col3">
+                         <p class="title">donor blood group:</p>
+                         <input type="text" name="blood_grp" id="bloodg" /> <br /><br />
+                </div>
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-sm-6">
+                <div class="col1">
+                    <p class="title">donor district:</p>
+                    <input type="text" name="district" id="districtSel" /> <br /><br />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col3">
+                         <p class="title">donor Address:</p>
+                         <input type="text" name="blood_grp" id="address" /> <br /><br />
+                </div>
+            </div>
+            </div>
+    </div>
+    <center>
+    <div class="buttons" style="background-color: black; border-radius: 20px;">
+        <h1 style="background-color: black;color: white; width: 30%;">Display Details</h1>
+        <button id="read">Click Here</button>
+    </div>
+    </center>
+    </div>
+    <footer>
+        <div class="fluid-container f1">
+            <div class="container-fluid ">
+                <div class="row ourservicesrow">
+                    <div class="col-sm-2 ourservices">
+                    </div>
+                    <div class="col-sm-10 aboutmeparagraph">
+                    </div>
+                </div>
+                <pre class="copyrightline"><i class="fa fa-copyright" aria-hidden="true"></i>copyright to Rakt Sanagrahalay.com<br>all rights reserved.</pre>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./script/fireconfig.js"></script>
+
+    <script src="./script/donor_details.js"></script>
+</body>
+
+</html>

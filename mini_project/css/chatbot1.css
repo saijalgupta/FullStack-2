@@ -1,0 +1,215 @@
+
+
+body{
+    
+    overflow-x: hidden;
+    background-image: linear-gradient(
+      to right,
+      violet,gray
+    );
+  }
+  .s1{
+      color: firebrick;
+      font-family: sans-serif;
+      font-size: 50px;
+      text-align: center;
+      text-transform: capitalize;
+      margin-top: 20px;
+  }
+  .col1{
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid lightblue;
+      background-color: whitesmoke;
+      box-shadow: 0 0 20px 2px red ;
+      width: 60%;
+      border-radius: 5px;
+      border: 2px solid white;
+      margin-top: 50px;
+      margin-bottom: 100px;
+  }
+  
+  .vj{
+      font-size: 20px;
+      text-transform: capitalize;
+      font-family:sans-serif;
+      margin-left: 5px;
+      margin-top: 25px;
+      margin-bottom: 1px;
+      color: black;
+      text-align: center;
+      font-style: italic;
+      text-decoration: underline;
+  }
+  
+  #chatlog{
+      font-size: 20px;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+  }
+  #chat{
+      font-size: 20px;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      color: black;
+      text-align: left;
+      line-height: 30px;
+  }
+  .col2{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  input{
+      border-radius: 5px;
+      width: 280px;
+      background-color:darkred;
+      color: white;
+      border: none;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px 2px lightpink ;
+      margin-bottom: 45px;
+  }
+  /*            nav               */
+  nav {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+  
+  }
+  
+  .item1 {
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
+  }
+  
+  .item2 {
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
+  }
+  
+  .item3 {
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
+  }
+  
+  .dropdown {
+      background-color: aliceblue;
+  
+  }
+  
+  .brand-name {
+      color: white;
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: center;
+  }
+  
+  .logoimg {
+      height: 40px;
+      width: 40px;
+      border-radius: 2px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 20px;
+  }
+  
+  .navbtn {
+      margin-left: 20px;
+      height: 40px;
+      width: 60px;
+      font: none;
+      padding: 0;
+      border-width: 0;
+      border-style: none;
+      border-color: none;
+      border-image: none;
+      border-radius: 5px;
+      background-color: #E5E4E2;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+  
+  .navbtn:hover {
+      background-color: #8D7490;
+      color: white;
+  }
+  
+  .contactbtn {
+      margin-left: 20px;
+      height: 40px;
+      width: 100px;
+      font: none;
+      padding: 0;
+      border-width: 0;
+      border-style: none;
+      border-color: none;
+      border-image: none;
+      border-radius: 5px;
+      background-color: #E5E4E2;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+  
+  .contactbtn:hover {
+      background-color: #8D7490;
+      color: white;
+  }
+  
+  
+  /*----  ----footer----- --------*/
+  .f1 {
+      background-color: black;
+      margin-top: 20%;
+  }
+  
+  .infomationtag {
+      text-align: center;
+      color: darkgrey;
+      font-size: 20px;
+      font-style: italic;
+      text-transform: capitalize;
+  }
+  
+  .ourservicesheader {
+      text-align: left;
+      color: darkgray;
+      font-size: 18px;
+      font-style: italic;
+      text-transform: capitalize;
+      margin-top: 10px;
+  }
+  
+  .ourservicesparagraph {
+      font-size: 15px;
+      color: darkgray;
+      margin-top: 10px;
+  }
+  
+  .copyrightline {
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      color: whitesmoke;
+      margin-top: 20px;
+      margin-bottom: 0px;
+  }

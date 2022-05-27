@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Instruction</title>
+    <link rel="stylesheet" href="../mini/donors.css">
+</head>
+<body>
+
+      <nav class="navbar navbar-toggleable-md fixed-top navbar-light  bg-dark">
+        <button class="navbar-toggler navbar-toggler-right dropdown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-fluid logoimg" src="../Image/blood logo.png">
+            <h7 class="brand-name"><b>Rakt Sangrahalay</b></h7>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item item1 active"><a class="navlinks" href="../index.html">
+                    <b>Home</b></a>
+                </li>
+                <li class="nav-item item1 active"><a class="navlinks" href="../mini/hospitalusers.html">
+                    <b>Hospital</b></a>
+                </li>
+                <li class="nav-item item1 active"><a class="navlinks" href="../mini/users.html">
+                    <b>Blood_Bank</b></a>
+                </li>
+                <li class="nav-item item1 active"><a class="navlinks" href="../mini/instruction.html">
+                    <b>Blood_Donor</b></a>
+                </li>
+                <li class="nav-item item1 active"><a class="navlinks" href="../mini/admin.html">
+                    <b>Logout</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+      <div id="card">
+          <div class="previous">
+        <h1><b><u>Blood Donor Users</u></b></h1>
+        <button id="read">Click Here For Viewing The Donors</button><br>
+        <div id="list"></div> 
+        </div><br>
+        <div class="recent">
+        <p>Enter the name of the donor to delete it if its faulty.</p>
+        <input type="text" alt="name" id="name" placeholder="enter the name of the donor"/><br><br>
+
+        <button id="remove">Delete Data</button><br>
+        <div id="list"></div> 
+        </div>
+    </div>
+    </center>
+    <footer>
+        <footer>
+            <div class="fluid-container f1">
+                <div class="container-fluid ">
+                    <h1 class="infomationtag"><u>information</u></h1>
+                    <div class="row ourservicesrow">
+                        <div class="col-sm-2 ourservices">
+                            <h1 class="ourservicesheader"><b>our services :</b></h1>
+                        </div>
+                        <div class="col-sm-10 aboutmeparagraph">
+                            <p class="ourservicesparagraph">Our website aims to provide the best and easy way of finding available beds in hospitals in your location. Also , doctor details , location of hospitals and extra details will be provided via sanjeevni website. By this website we make sure we provide you the details which are legal , eligible and important for our users. Via this website all important and required details can be accessed in one tap .Our services are reliable and trustworthy.</p>
+                        </div>
+                    </div>
+                    <pre class="copyrightline"><i class="fa fa-copyright" aria-hidden="true"></i>©copyright to Raktsangralya.com ,all rights reserved.</pre>
+                </div>
+            </div>
+        </footer>    
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="../mini_project/script/fireconfig.js"></script>
+<script>
+
+  document.getElementById("read").onclick = function () {
+  var list = document.getElementById("list");
+    list.innerHTML = "";
+    firebase
+    .database()
+    .ref("blooddonordetails/")
+    .on("value", function (snap) {
+        snap.forEach(child => {    
+            console.log(child.key);
+            var li = document.createElement("li");
+            li.innerHTML = child.key;
+            list.appendChild(li);
+         });
+
+    });
+};
+  var nameV;
+  function readFom()
+  {
+      nameV =  document.getElementById("name").value;
+  }
+document.getElementById("remove").onclick = function () {
+  readFom();
+
+  firebase
+    .database()
+    .ref("blooddonordetails/" + nameV)
+    .remove();
+  alert("Data Deleted");
+  document.getElementById("name").value = "";
+  document.getElementById("list").value = "";
+};
+</script>
+
+</body>
+</html> 

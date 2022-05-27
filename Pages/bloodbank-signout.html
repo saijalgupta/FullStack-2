@@ -1,0 +1,206 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="../Image/blood logo.png">
+     <!--bootstrap cdn-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+     <!--font awesome cdn-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="../Style/bloodbank-signup.css">
+</head>
+<body>
+    
+    <!--nav bar-->
+     <nav class="navbar navbar-toggleable-md navbar-light  bg-dark">
+        <button class="navbar-toggler navbar-toggler-right dropdown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="img-fluid logoimg" src="../Image/blood logo.png">
+            <h7 class="brand-name"><b>Rakt Sanagrahalay</b></h7>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item item1 active"><a href="../index.html">
+                        <button class="contactbtn btn-outline-success my-2 my-sm-0" type="submit"><b>Home</b></button></a>
+                </li>
+                <li class="nav-item item2 active">
+                    <a href="../chatbot.html"> <button class="loginbtn btn-outline-success my-2 my-sm-0" type="submit"><b>Chatbot</b></button></a>
+                </li>
+                <li class="nav-item item3 active"><a href="../Pages/signin.html">
+                        <button class="signbtn btn-outline-success my-2 my-sm-0" type="submit"><b>Sign In/up</b></button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row maincontainer">
+                    <div class="container-fluid contactform">
+                        <div class="contact-title">
+                            <h1 class="signupline"><b>Blood Bank Sign up</b></h1>
+                            <h2 class="signuptag">Rakt Sanagrahalay is always ready<br>to serve you!</h2>
+                        </div>
+                       <div class="contact-form">
+                                <input type="email" name="Email" id="email"  class="form-control" placeholder="Email" autocomplete="off" required /><br />
+                                <input type="password" name="make_password"   id="password" class="form-control" placeholder="Make Password" required /><br />
+                                <input type="text" name="b_b_name" id="name" class="form-control" placeholder="Blood Bank Name" autocomplete="off" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" /><br />
+                                <input type="text" name="b_b_address" id="address" class="form-control" placeholder="Blood Bank Address" autocomplete="off" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"/><br />
+                                <select name="district" class="form-control" id="districtSel">
+                                    <option value="" selected="selected">Select Blood Bank district</option>
+                                    <option value="Agra" >Agra</option>
+                                    <option value="Aligarh">Aligarh</option>
+                                    <option value="Amroha"> Amroha</option>
+                                    <option value="Auraiya">Auraiya</option>
+                                    <option value="Azamgarh">Azamgarh</option>
+                                    <option value="Ambedkar Nagar">Ambedkar Nagar</option>
+                                    <option value="Badaun">Badaun</option>
+                                    <option value="Bahraich">Bahraich</option>
+                                    <option value="Ballia">Ballia</option>
+                                    <option value="Balrampur">Balrampur</option>
+                                    <option value="Banda District">Banda District</option>
+                                    <option value="Barabanki">Barabanki</option>
+                                    <option value="Bareilly">Bareilly</option>
+                                    <option value="Basti">Basti</option>
+                                    <option value="Bijnor">Bijnor</option>
+                                    <option value="Bulandshahr">Bulandshahr</option>
+                                    <option value="Chandauli">Chandauli</option>
+                                    <option value="Chitrakoot">Chitrakoot</option>
+                                    <option value="Deoria">Deoria</option>
+                                    <option value="Etah">Etah</option>
+                                    <option value="Etawah">Etawah</option>
+                                    <option value="Faizabad">Faizabad</option>
+                                    <option value="Farrukhabad">Farrukhabad</option>
+                                    <option value="Fatehpur">Fatehpur</option>
+                                    <option value="Firozabad">Firozabad</option>
+                                    <option value="Gautam Buddha Nagar">	Gautam Buddha Nagar</option>
+                                    <option value="Ghaziabad">Ghaziabad</option>
+                                    <option value="Ghazipur">Ghazipur</option>
+                                    <option value="Gonda">Gonda</option>
+                                    <option value="Gorakhpur">	Gorakhpur</option>
+                                    <option value="Hamirpur">Hamirpur</option>
+                                    <option value="Hapur District">Hapur District</option>
+                                    <option value="Hardoi">Hardoi</option>
+                                    <option value="Hathras">Hathras</option>
+                                    <option value="Jaunpur District">Jaunpur District</option>
+                                    <option value="Jhansi">Jhansi</option>
+                                    <option value="Kannauj">Kannauj</option>
+                                    <option value="Kanpur Dehat">Kanpur Dehat</option>
+                                    <option value="Kanpur Nagar">Kanpur Nagar</option>
+                                    <option value="Kasganj">Kasganj</option>
+                                    <option value="Kaushambi">Kaushambi</option>
+                                    <option value="Kushinagar">Kushinagar</option>
+                                    <option value="Lakhimpur Kheri">Lakhimpur Kheri</option>
+                                    <option value="Lalitpur">Lalitpur</option>
+                                    <option value="Lucknow">	Lucknow</option>
+                                    <option value="Maharajganj">Maharajganj</option>
+                                    <option value="Mahoba">Mahoba</option>
+                                    <option value="Mainpuri">Mainpuri</option>
+                                    <option value="Mathura">Mathura</option>
+                                    <option value="Mau">Mau</option>
+                                    <option value="Meerut">Meerut</option>
+                                    <option value="Mirzapur">Mirzapur</option>
+                                    <option value="Moradabad">Moradabad</option>
+                                    <option value="Muzaffarnagar">	Muzaffarnagar</option>
+                                    <option value="Pilibhit">Pilibhit</option>
+                                    <option value="Pratapgarh">Pratapgarh</option>
+                                    <option value="prayagraj">prayagraj</option>
+                                    <option value="Rae Bareli">Rae Bareli</option>
+                                    <option value="Rampur">Rampur</option>
+                                    <option value="Saharanpur">Saharanpur</option>
+                                    <option value="Sant Kabir Nagar">Sant Kabir Nagar</option>
+                                    <option value="Sant Ravidas Nagar">Sant Ravidas Nagar</option>
+                                    <option value="Sambhal">Sambhal</option>
+                                    <option value="	Shahjahanpur">	Shahjahanpur</option>
+                                    <option value="Shamli">Shamli</option>
+                                    <option value="Shravasti">Shravasti</option>
+                                    <option value="Siddharthnagar">Siddharthnagar</option>
+                                    <option value="Sitapur">Sitapur</option>
+                                    <option value="Sonbhadra">Sonbhadra</option>
+                                    <option value="Sultanpur">Sultanpur</option>
+                                    <option value="Unnao">Unnao</option>
+                                    <option value="Varanasi (Kashi)">Varanasi (Kashi)</option>
+                                    <option value="Amethi">Amethi</option>
+                                    <option value="Bagpat">Bagpat</option>
+                                </select><br>
+                                <input name="b_b_phone_no" id="mobilenumber" onkeypress="javascript:return isNumber(event)" type="text" class="form-control" placeholder="Blood Bank Phone Number" autocomplete="off" required><br>
+                                <select name="a_positive" class="form-control" id="apositive">
+                                    <option>A+ Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="a_negative" class="form-control" id="anegative">
+                                    <option>A- Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="b_positive" class="form-control" id="bpositive">
+                                    <option>B+ Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="b_negative" class="form-control" id="bnegative">
+                                    <option>B- Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="ab_positive" class="form-control" id="abpositive">
+                                    <option>AB+ Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="ab_negative" class="form-control" id="abnegative">
+                                    <option>AB- Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="o_positive" class="form-control" id="opositive">
+                                    <option>O+ Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br>
+                                <select name="O_negative" class="form-control" id="onegative">
+                                    <option>O- Blood Group</option>
+                                    <option>Available</option>
+                                    <option>Not Available</option>
+                                </select><br> 
+                               <button onclick="signup();insert();" id="insert" class="submit">Sign Up</button> 
+     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="fluid-container f1">
+            <div class="container-fluid ">
+                <h1 class="infomationtag"><u>information</u></h1>
+                <div class="row ourservicesrow">
+                    <div class="col-sm-2 ourservices">
+                        <h1 class="ourservicesheader"><b>our services :</b></h1>
+                    </div>
+                    <div class="col-sm-10 aboutmeparagraph">
+                        <p class="ourservicesparagraph">Our website aims to provide the best and easy way of finding available bloods in hospitals in your location. Also , doctor details , location of hospitals and extra details will be provided via Rakt Sanagrahalay website. By this website we make sure we provide you the details which are legal , eligible and important for our users. Via this website all important and required details can be accessed in one tap .Our services are reliable and trustworthy.</p>
+                    </div>
+                </div>
+                <pre class="copyrightline"><i class="fa fa-copyright" aria-hidden="true"></i>copyright to Rakt Sanagrahalay.com,all rights reserved.</pre>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="../Script/fireConfig.js"></script>
+
+    <script src="../Script/myscript.js"></script>
+
+</body>
+</html>

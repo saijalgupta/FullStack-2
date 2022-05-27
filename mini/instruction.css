@@ -1,0 +1,114 @@
+nav {
+  background-color: darkblue;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+.item1 {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.item2 {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.item3 {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.dropdown {
+  background-color: aliceblue;
+
+}
+
+.brand-name {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.logoimg {
+  height: 40px;
+  width: 40px;
+  border-radius: 2px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.f1 {
+  background-color: darkblue;
+  overflow-x: hidden;
+margin-bottom: 0px;
+}
+.copyrightline {
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.navlinks{
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: serif;
+  font-size: 25px;
+}
+.navlinks:hover{
+  color: palegreen;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: serif;
+  font-size: 25px;
+  text-decoration: underline;
+}
+body{
+  background-color: dodgerblue;
+  overflow-x: hidden;
+}
+
+.c1{
+  background-color: darkblue;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow-x: hidden;
+  border-radius: 20px;
+  
+  
+}
+.admininstruction{
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: serif;
+  font-size: 50px;
+  font-size-adjust: auto;
+  margin-top: 20px;
+}
+
+.instruction{
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: serif;
+  font-size: 30px;
+  font-size-adjust: auto;
+  margin-top: 20px;
+}

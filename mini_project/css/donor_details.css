@@ -1,0 +1,142 @@
+/* /nav bar/ */
+nav {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+
+}
+.brand-name {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.logoimg {
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+/* /footer/ */
+.f1 {
+    background-color: black;
+    margin: 0px;
+}
+.copyrightline {
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    color: whitesmoke;
+    margin: 0px;
+}
+
+/* /body/ */
+body{
+    /* background-color: #330033; */
+    overflow-x: hidden;
+}
+
+.edit_line{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: serif;
+    margin-top: 20px;
+}
+.c2{
+    background-color: #e580ff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.detail_line{
+    color: darkred;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+input[type="text"]
+{
+   
+    margin-left: 35%;
+    text-align: center;
+    background-color:black;
+    color: white;
+}
+
+.col1{
+    background-color: rgb(100, 100, 212);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 7px white ;
+}
+
+.col2{
+    background-color: rgb(100, 100, 212);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 7px white ;
+}
+
+.col3{
+    background-color: rgb(100, 100, 212);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 7px white ;
+}
+.title{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: serif;
+    font-size: 25px;
+    margin: 0px;
+}
+.update_btn{
+    background-color: rgb(100, 100, 212);
+    color: white;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 60px;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px 1px white ;
+    font-size: 25px;
+    text-transform: capitalize;
+    
+}
+
+.form-control {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}

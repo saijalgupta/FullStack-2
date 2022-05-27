@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakt Sangrahalay.com/district_page</title>
+    <link rel="icon" href="../Image/blood logo.png">
+    <!--bootstrap cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css file link-->
+    <link rel="stylesheet" href="./district_page.css">
+    <link rel="stylesheet" href="../mini_project/css/developer.css">
+
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-toggleable-md navbar-light  bg-dark">
+        <button class="navbar-toggler navbar-toggler-right dropdown" style="margin-top: 10px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand " href="#"><img class="img-fluid logoimg" src="../Image/blood logo.png">
+            <h7 class="brand-name"><b>Rakt Sanagrahalay</b></h7>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+                <!-- <li class="nav-item item1 active"><a href="../mini_project/developer.html">
+                        <button class="contactbtn btn-outline-success my-2 my-sm-0" type="submit"><b>Developer</b></button></a>
+                </li> -->
+                
+                <li class="nav-item item3 active"><a href="../Pages/signin.html">
+                    <button class="signbtn btn-outline-success my-2 my-sm-0" type="submit"><b>Services</b></button></a>
+                </li>
+                <li class="nav-item item3 active"><a href="../index.html">
+                    <button class="signbtn btn-outline-success my-2 my-sm-0" type="submit"><b>Home</b></button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--district card -->
+    <center>
+    <div>
+        <div class=" listdropdown">
+            <button onclick="myFunction()" class="dropbtn">search your district here</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="show_data/agra.html">Agra</a>
+                <a href="./show_data/ambedkar nagar.html">Ambedkar Nagar</a>
+                <a href="show_data/Amethi.html">Amethi</a>
+                <a href="show_data/Amroha.html">Amroha</a>
+                <a href="show_data/Auraiya.html">Auraiya</a>
+                <a href="show_data/azamgarh.html">Azamgarh</a>
+                <a href="show_data/baghpat.html">Baghpat</a>
+                <a href="show_data/bahraich.html">Bahraich</a>
+                <a href="show_data/ballia.html">Ballia</a>
+                <a href="show_data/balrampur.html">Balrampur</a>
+                <a href="show_data/banda.html">Banda</a>
+                <a href="show_data/barabanki.html">Barabanki</a>
+                <a href="show_data/bareily.html">Bareilly</a>
+                <a href="show_data/basti.html">Basti</a>
+                <a href="show_data/bhadohi.html">Bhadohi</a>
+                <a href="show_data/bijnor.html">Bijnor</a>
+                <a href="show_data/budaun.html">Budaun</a>
+                <a href="show_data/bulandshahar.html">Bulandshahr</a>
+                <a href="show_data/chandouli.html">Chandauli</a>
+                <a href="show_data/chitrakoot.html">Chitrakoot</a>
+                <a href="show_data/deoria.html">Deoria</a>
+                <a href="show_data/etah.html">Etah</a>
+                <a href="show_data/etawa.html">Etawah</a>
+                <a href="show_data/faizabad.html">Faizabad</a>
+                <a href="show_data/farrukkhabad.html">Farrukhabad</a>
+                <a href="show_data/fatehpur.html">Fatehpur</a>
+                <a href="show_data/firozabad.html">Firozabad</a>
+                <a href="show_data/GB_nagar.html">Gautam Buddha Nagar</a>
+                <a href="show_data/ghaziabad.html">Ghaziabad</a>
+                <a href="show_data/ghazipur.html">Ghazipur</a>
+                <a href="show_data/gonda.html">Gonda</a>
+                <a href="show_data/gorakhpur.html">Gorakhpur</a>
+                <a href="show_data/hamirpur.html">Hamirpur</a>
+                <a href="show_data/hapur.html">Hapur</a>
+                <a href="show_data/hardoi.html">Hardoi</a>
+                <a href="show_data/harigarh.html">Harigarh</a>
+                <a href="show_data/hathras.html">Hathras</a>
+                <a href="show_data/jalaun.html">Jalaun</a>
+                <a href="show_data/jaunpur.html">Jaunpur</a>
+                <a href="show_data/jhansi.html">Jhansi</a>
+                <a href="show_data/kannauj.html">Kannauj</a>
+                <a href="show_data/kanpur_dehat.html">Kanpur Dehat</a>
+                <a href="show_data/kanpur_nagar.html">Kanpur Nagar</a>
+                <a href="show_data/kasganj.html">Kashganj</a>
+                <a href="show_data/kaushambi.html">Kaushambi</a>
+                <a href="show_data/kushinagar.html">Kushinagar</a>
+                <a href="show_data/lakhimpur.html">Lakhimpur</a>
+                <a href="show_data/lalitput.html">Lalitpur</a>
+                <a href="show_data/lucknow.html">Lucknow</a>
+                <a href="show_data/maharajganj.html">Maharajganj</a>
+                <a href="show_data/mahoba.html">Mahoba</a>
+                <a href="show_data/mainpuri.html">Mainpuri</a>
+                <a href="show_data/mathura.html">Mathura</a>
+                <a href="show_data/mau.html">Mau</a>
+                <a href="show_data/meerut.html">Meerut</a>
+                <a href="show_data/mirzapur.html">Mirzapur</a>
+                <a href="show_data/moradabad.html">Moradabad</a>
+                <a href="show_data/muzaffarnagr.html">Muzaffarnagar</a>
+                <a href="show_data/pilibhit.html">Pilibhit</a>
+                <a href="show_data/pratapgarh.html">Pratapgarh</a>
+                <a href="show_data/allahabad.html">Prayagragh</a>
+                <a href="show_data/raebarely.html">RaeBareli</a>
+                <a href="show_data/rampur.html">Rampur</a>
+                <a href="show_data/shaharanpur.html">Saharanpur</a>
+                <a href="show_data/sambhal.html">Sambhal</a>
+                <a href="show_data/sant_kabir_nagar.html">Sant Kabir Nagar</a>
+                <a href="show_data/shahajanpur.html">Shahjahanpur</a>
+                <a href="show_data/shamli.html">Shamali</a>
+                <a href="show_data/shravasti.html">Shravasti</a>
+                <a href="show_data/siddharth_nagar.html">Siddharth Nagar</a>
+                <a href="show_data/sitapur.html">Sitapur</a>
+                <a href="show_data/sonbhadra.html">Sonbhadra</a>
+                <a href="show_data/sultanpur.html">Sultanpur</a>
+                <a href="show_data/unnao.html">Unnao</a>
+                <a href="show_data/varansi.html">Varanasi</a>
+
+            </div>
+        </div>
+    </div>
+    </center>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <!--flex box-->
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/agra.html">
+                        <div class="card-first">
+                            <img class="card-img-top img" src="image/agra-taj.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Agra</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/ambedkar nagar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/ambedkar_nagar.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n1">ambedkar nagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/Amethi.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Amethi.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">amethi</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/Amroha.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Amroha.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">amroha</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/Auraiya.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/auraiya.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">auraiya</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/azamgarh.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/azamgarh.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">azamgarh</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/baghpat.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/baghpat.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">baghpat</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/bahraich.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/bahraich.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">bahraich</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/ballia.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/balia.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">ballia</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/balrampur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/balrampur.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">balrampur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/banda.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/banda.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">banda</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/barabanki.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Barabanki.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Barabanki</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/bareily.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/Bareilly.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Bareilly</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/basti.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Basti.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Basti</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/bhadohi.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Bhadohi.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Bhadohi</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/bijnor.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Bijnor.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Bijnor</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/budaun.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Budaun.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Budaun</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/bulandshahar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Bulandshahr.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n11">Bulandshahr</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/chandouli.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/chandouli_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Chandauli</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/chitrakoot.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/chitrakoot_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Chitrakoot</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                
+                <div class="card-deck">
+                    <a href="show_data/deoria.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/deoria_img.webp" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Deoria</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/etah.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/etah_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Etah</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/etawa.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/etawa_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Etawah</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/faizabad.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/etawa_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Faizabad</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/farrukkhabad.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/farrukkhabad_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n12">Farrukhabad</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/fatehpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/fatehpur_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Fatehpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/firozabad.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/firozabad_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Firozabad</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/GB_nagar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/gb%20nagar_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n2">Gautam Buddha<br>Nagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/ghaziabad.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/gaziabad_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Ghaziabad</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/ghazipur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/gazipur_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Ghazipur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/gonda.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/gonda_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Gonda</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/gorakhpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Gorakhpur_img.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Gorakhpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/hamirpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Hamirpur.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Hamirpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/hapur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Hapur.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Hapur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/hardoi.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Hardoi.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Hardoi</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/harigarh.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/aligarh.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Harigarh</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/hathras.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Hathras.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Hathras</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/jalaun.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Jalaun.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Jalaun</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/jaunpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Jaunpur.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Jaunpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/jhansi.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Jhansi.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Jhansi</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/kannauj.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Kannaunj.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Kannauj</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/kanpur_dehat.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/Kanpur%20Dehat.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n3">Kanpur Dehat</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/kanpur_nagar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Kanpur%20Nagar.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n4">Kanpur Nagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/kasganj.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Kasganj.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Kasganj</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/kaushambi.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Kaushambhi.png" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Kaushambi</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container lastitemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/kushinagar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Khusinagar.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Kushinagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/lakhimpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Lakhimpur%20Kheri.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Lakhimpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/lalitput.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/Lalitpur.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Lalitpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/lucknow.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/Lucknow.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Lucknow</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/maharajganj.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/mahrajganj.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n5">Maharajganj</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/mahoba.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/mahoba.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Mahoba</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/mainpuri.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/mainpuri1.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Mainpuri</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/mathura.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/mathura.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Mathura</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/mau.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/mau1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Mau</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/meerut.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/meerut.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Meerut</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/mirzapur.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/mirzapur1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Mirzapur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/moradabad.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/moradabad1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Moradabad</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/muzaffarnagr.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/muzaffarnagar1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n6">Muzaffarnagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/pilibhit.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/pilibhit1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Pilibhit</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/pratapgarh.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/pratapgarh.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Pratapgarh</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/allahabad.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/allahabad.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Prayagragh</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/raebarely.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/raebarele1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">RaeBareli</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/rampur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/rampur.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Rampur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/shaharanpur.html">
+                        <div class="card">
+                            <img class="card-img-top" src="image/sharanpur1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n7">Saharanpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/sambhal.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/sambhal1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Sambhal</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container itemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/sant_kabir_nagar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/sant%20kabir.PNG" alt="Card image cap">
+                            <div class="card-block ">
+                                <h2 class="card-title n8">Sant Kabir Nagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/shahajanpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/shajhanpur.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n9">Shahjahanpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/shamli.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/shamli1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Shamali</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/shravasti.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/shravasti.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Shravasti</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/siddharth_nagar.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/siddarthngr.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title n10">Siddharth Nagar</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container lastitemscontainer">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="card-deck">
+                    <a href="show_data/sitapur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/sitapur1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Sitapur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/sonbhadra.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/sonbhadra.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Sonbhadra</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/sultanpur.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/sultanpur1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Sultanpur</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/unnao.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/unnao1.PNG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Unnao</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-deck">
+                    <a href="show_data/varansi.html">
+                        <div class="card-first">
+                            <img class="card-img-top" src="image/varanasi1.JPG" alt="Card image cap">
+                            <div class="card-block">
+                                <h2 class="card-title">Varanasi</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer Section of Home Page-->
+    <footer>
+        <div class="fluid-container f1">
+        <div class="container-fluid ">
+            <h1 class="infomationtag"><u>information</u></h1>
+        <div class="row ourservicesrow">
+            <div class="col-sm-2 ourservices">
+                <h1 class="ourservicesheader"><b>our services :</b></h1>
+            </div>
+            <div class="col-sm-10 aboutmeparagraph">
+                <p class="ourservicesparagraph">Our website aims to provide the best and easy way of finding available bloods in hospitals in your location. Also , doctor details , location of hospitals and extra details will be provided via Rakt Sanagrahalay website. By this website we make sure we provide you the details which are legal , eligible and important for our users. Via this website all important and required details can be accessed in one tap .Our services are reliable and trustworthy.</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+        <div class="">
+        <div class="row clearfix">
+         <!--Footer Logo------------
+        <div class="col-md-3 col-sm-3 col-xs-12 footer-logo wow bounceInLeft text-center">
+        <div class='col-md-12 col-xs-12'>  <a   rel="noopener" href="https://www.mohfw.gov.in/" target='_blank'> <img src="../Image/ministryofhealth.jpg" style='width: 260px;' alt="Ministry of health and family welfare"></a></div>
+        </div>
+        <div class="col-md-2 col-sm-1 col-xs-12 footer-logo wow bounceInRight text-center">
+        <div class='col-md-12 col-xs-12'  >  <a href='https://india.gov.in/' target='_blank' rel="noopener" ><img src="../Image/indiagov.png" style='width: 150px;' alt="National Portal of India"></a></div>
+        </div>
+        <div class="col-md-2 col-sm-1 col-xs-12 footer-logo wow bounceInBottom text-center">
+        <div class='col-md-12 col-xs-12'><a href='https://web.umang.gov.in/' target='_blank' rel="noopener"><img style="width: 150px;" src="../Image/umang.png" alt="Umang"></a>
+        </div>
+        </div>
+        <div class="col-md-2 col-sm-1 col-xs-12 footer-logo wow bounceInBottom text-center">
+        <div class='col-md-12 col-xs-12'  ><a href='https://www.nhp.gov.in/'><img src="../Image/nhp.png" style="width: 150px; height: 110px;" alt="National Health Portal"></a>
+        </div>
+        </div>
+        <div class="col-md-3 col-sm-1 col-xs-12 footer-logo wow bounceInRight text-center">
+        <div class='col-md-12 col-xs-12'  ><a href='https://www.nhp.gov.in/' target='_blank' rel="noopener"><img src="../Image/nationalhealthmission.png" style="width:260px;height: 110px;" alt="National Health Mission"></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>----->
+        <div class="col-sm-10 copyrightline">
+        <pre class="col-sm-10 copyrightline"><i class="fa fa-copyright" aria-hidden="true"></i>copyright to Rakt Sanagrahalay.com,all rights reserved.</pre>
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
